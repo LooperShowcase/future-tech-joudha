@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>voice assistant</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/artificial-intelligence-ai-processor-chip-vector-icon-symbol-graphic-design-logo-web-site-social-media-mobile-app-ui-158205566.jpg">
+  </head>
+  <body>
+    <button onclick="speak()">allow audio</button>
+    <div class="container">
+      <h1>voice assistant by joud</h1>
+      <form onsubmit="event.preventDefault();
+      conversationUserAdd(document.getElementById('input-text').value);
+      open_ai();
+      document.getElementById('input-text').value='';
+      ">
+      <input type="text" id="input-text" placeholder="ask me" />
+      <button id="submit-button">Submit</button>
+      <div id="chat-container"></div>
+    </div>
+  </body>
+</html>
